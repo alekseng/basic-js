@@ -31,7 +31,7 @@ function transform(arr) {
     return [];
   }
 
-  const array = structuredClone(arr);
+  const array = JSON.parse(JSON.stringify(arr));
   const res = [];
 
   for (let i = 0; i < array.length; i += 1) {
